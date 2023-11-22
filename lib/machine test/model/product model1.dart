@@ -1,12 +1,16 @@
+// To parse this JSON data, do
+//
+//     final productTitle = productTitleFromJson(jsonString);
+
 import 'dart:convert';
 
-List<ProductModel> productModelFromJson(String str) => List<ProductModel>.from(
-    json.decode(str).map((x) => ProductModel.fromJson(x)));
+List<ProductTitle> productTitleFromJson(String str) => List<ProductTitle>.from(
+    json.decode(str).map((x) => ProductTitle.fromJson(x)));
 
-String productModelToJson(List<ProductModel> data) =>
+String productTitleToJson(List<ProductTitle> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class ProductModel {
+class ProductTitle {
   int? id;
   String? title;
   double? price;
@@ -15,7 +19,7 @@ class ProductModel {
   String? image;
   Rating? rating;
 
-  ProductModel({
+  ProductTitle({
     this.id,
     this.title,
     this.price,
@@ -25,7 +29,7 @@ class ProductModel {
     this.rating,
   });
 
-  factory ProductModel.fromJson(Map<String, dynamic> json) => ProductModel(
+  factory ProductTitle.fromJson(Map<String, dynamic> json) => ProductTitle(
         id: json["id"],
         title: json["title"],
         price: json["price"]?.toDouble(),
