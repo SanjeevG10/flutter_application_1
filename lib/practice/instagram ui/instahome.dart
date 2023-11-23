@@ -10,7 +10,7 @@ void main() {
 }
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home(product, {super.key});
 
   @override
   State<Home> createState() => _HomeState();
