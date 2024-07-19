@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form-label {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+body {
+    margin-right: 0px;
+}
+
+.card {
+    position: relative;
+    top: -1px;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 400px) {
+    .container {
+        max-width: 360px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 440px) {
+    .container {
+        max-width: 400px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 490px) {
+    .container {
+        max-width: 440px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 540px) {
+    .container {
+        max-width: 490px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 810px) {
+    .container {
+        max-width: 768px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 850px) {
+    .container {
+        max-width: 810px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        text-align: center;
+    }
+}
+
+.about {
+    padding: 5em;
+}
